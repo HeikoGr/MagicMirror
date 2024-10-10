@@ -101,6 +101,7 @@ WeatherProvider.register("openweathermap", {
 		this.config = config;
 		if (!this.config.weatherEndpoint) {
 			switch (this.config.type) {
+				case "":
 				case "hourly":
 				case "daily":
 				case "forecast":
